@@ -1,5 +1,0 @@
-schema_version,stage,lead_role,main_schema_changes,leakage_control_changes,status
-v0.1,Initial integrated draft,Human supervisor,Disease classification; disease type; genes/mutations; pathways; symptoms; diagnosis; treatments,No explicit leakage-control wording,Not converged
-v0.2,Molecular refinement,Molecular biology agent,Added proteins; epigenetic mechanisms; molecular/cellular pathogenesis,Removed piRNA-specific examples; required general disease-level wording,Not converged
-v0.3,Clinical and encoding refinement,Clinical medicine + computational biology agents,Revised treatments to include therapeutic mechanisms; revised diagnosis to include testing methods; added comorbidities/complications and inheritance/genetic factors,"Added no benchmark labels, train/test split information, or prediction targets",Not converged
-v1.0,Final frozen schema,Human supervisor after peer review,Final 12-field schema fixed; cohesive paragraph output; factuality constraints; no-available-information rule,"Explicitly prohibited piRNA/PIWI terms, hsa_piR identifiers, PDA labels, disease-specific piRNA evidence, model predictions",Converged and frozen
