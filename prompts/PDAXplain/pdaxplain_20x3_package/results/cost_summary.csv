@@ -1,0 +1,4 @@
+﻿category,total_tokens,total_input_tokens,total_output_tokens,cost_usd,n_calls
+report_generation,143477.0,32124.0,111353.0,3.5012100000000004,60
+claim_audit,198663.0,96695.0,101968.0,3.542515,60
+grand_total,342140.0,128819.0,213321.0,7.043725,120

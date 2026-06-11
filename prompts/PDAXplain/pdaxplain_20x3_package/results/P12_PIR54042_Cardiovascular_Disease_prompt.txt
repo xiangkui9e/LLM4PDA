@@ -1,0 +1,41 @@
+You are a rigorous biology and bioinformatics expert. Evaluate the following predicted piRNA–disease association as a cautious, post-prediction biological report.
+
+IMPORTANT RULES:
+- Do not fabricate references, database identifiers, genes, pathways, targets, or mechanisms.
+- If reliable information is unavailable, explicitly state "No reliable information is available" or "Uncertain".
+- Mechanistic inference must be based on known piRNA/PIWI biology, related family/sequence evidence, or supplied curated evidence.
+- The prediction probability is only a model-derived score and must not be treated as biological evidence.
+- Use conservative language, such as "may", "could", "hypothesis", and "requires validation".
+- Clearly distinguish direct evidence, indirect evidence, hypothesis-level interpretation, and unsupported/unavailable information.
+
+INPUT:
+piRNA name: PIR54042
+piRNA aliases: 
+piRNA sequence: 
+Disease name: Cardiovascular Disease
+Disease description: 
+Predicted association probability: 0.987
+Post hoc supporting evidence: PMID:28289238
+Evidence category: A: direct/literature-supported
+Curated background knowledge: Post hoc supporting evidence: PMID:28289238. Evidence category: A: direct/literature-supported. General piRNA/PIWI background should be supplied from the released PDAXplain background files. Do not treat the model prediction score as biological evidence.
+
+OUTPUT:
+Write a structured report with exactly the following six sections. Use the section titles verbatim.
+
+1. Biological plausibility
+Discuss whether the piRNA, its known/related expression, or general piRNA/PIWI biology could plausibly relate to the disease. Explicitly state missing information.
+
+2. Potential mechanisms
+Provide cautious possible mechanisms only when supported by supplied evidence or general piRNA/PIWI biology. If no reliable mechanism is available, state this clearly.
+
+3. Literature or database support
+List direct and indirect evidence. Mention the supplied PMID/database evidence, and explicitly state whether it supports the exact piRNA–disease pair or only indirect/contextual evidence.
+
+4. Credibility assessment
+Assign one of: High, Medium, Medium-low, Low. Explain why. Do not use the prediction score alone as evidence.
+
+5. Experimental validation suggestions
+Suggest feasible validation experiments and expected observations, starting with expression validation and then mechanism/function assays if appropriate.
+
+6. Summary statement
+Provide a conservative integrative conclusion and clearly state that the report is hypothesis-oriented rather than experimental validation.

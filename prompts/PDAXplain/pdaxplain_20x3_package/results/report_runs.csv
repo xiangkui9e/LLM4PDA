@@ -1,0 +1,61 @@
+﻿record_id,piRNA_name,disease_name,run,report_file,section_completion_rate,input_tokens,output_tokens,total_tokens,latency_seconds,cost_usd,section_present__Biological plausibility,section_present__Potential mechanisms,section_present__Literature or database support,section_present__Credibility assessment,section_present__Experimental validation suggestions,section_present__Summary statement
+P01,piR-hsa-23259,Renal Cell Carcinoma,1,reports/P01_piR-hsa-23259_Renal_Cell_Carcinoma_run1.md,1.0,525,1474,1999,33.339828968048096,0.046845,1,1,1,1,1,1
+P01,piR-hsa-23259,Renal Cell Carcinoma,2,reports/P01_piR-hsa-23259_Renal_Cell_Carcinoma_run2.md,1.0,525,1749,2274,38.700244665145874,0.055095,1,1,1,1,1,1
+P01,piR-hsa-23259,Renal Cell Carcinoma,3,reports/P01_piR-hsa-23259_Renal_Cell_Carcinoma_run3.md,1.0,525,1572,2097,33.668338775634766,0.049785,1,1,1,1,1,1
+P02,DQ593536,Renal Cell Carcinoma,1,reports/P02_DQ593536_Renal_Cell_Carcinoma_run1.md,1.0,534,1625,2159,37.42433714866638,0.05142,1,1,1,1,1,1
+P02,DQ593536,Renal Cell Carcinoma,2,reports/P02_DQ593536_Renal_Cell_Carcinoma_run2.md,1.0,534,1656,2190,39.337525367736816,0.05235,1,1,1,1,1,1
+P02,DQ593536,Renal Cell Carcinoma,3,reports/P02_DQ593536_Renal_Cell_Carcinoma_run3.md,1.0,534,1691,2225,37.84961986541748,0.0534,1,1,1,1,1,1
+P03,DQ577879,Renal Cell Carcinoma,1,reports/P03_DQ577879_Renal_Cell_Carcinoma_run1.md,1.0,534,1935,2469,43.7292160987854,0.06072,1,1,1,1,1,1
+P03,DQ577879,Renal Cell Carcinoma,2,reports/P03_DQ577879_Renal_Cell_Carcinoma_run2.md,1.0,534,1806,2340,39.09785199165344,0.05685,1,1,1,1,1,1
+P03,DQ577879,Renal Cell Carcinoma,3,reports/P03_DQ577879_Renal_Cell_Carcinoma_run3.md,1.0,534,1842,2376,41.34444308280945,0.05793,1,1,1,1,1,1
+P04,DQ574602,Renal Cell Carcinoma,1,reports/P04_DQ574602_Renal_Cell_Carcinoma_run1.md,1.0,534,1923,2457,46.0123929977417,0.06036,1,1,1,1,1,1
+P04,DQ574602,Renal Cell Carcinoma,2,reports/P04_DQ574602_Renal_Cell_Carcinoma_run2.md,1.0,534,1656,2190,35.86657786369324,0.05235,1,1,1,1,1,1
+P04,DQ574602,Renal Cell Carcinoma,3,reports/P04_DQ574602_Renal_Cell_Carcinoma_run3.md,1.0,534,1490,2024,35.4432098865509,0.04737,1,1,1,1,1,1
+P05,DQ601354,Renal Cell Carcinoma,1,reports/P05_DQ601354_Renal_Cell_Carcinoma_run1.md,1.0,534,1850,2384,39.82669138908386,0.05817,1,1,1,1,1,1
+P05,DQ601354,Renal Cell Carcinoma,2,reports/P05_DQ601354_Renal_Cell_Carcinoma_run2.md,1.0,534,1844,2378,42.51071333885193,0.05799,1,1,1,1,1,1
+P05,DQ601354,Renal Cell Carcinoma,3,reports/P05_DQ601354_Renal_Cell_Carcinoma_run3.md,1.0,534,1652,2186,36.40442132949829,0.05223,1,1,1,1,1,1
+P06,DQ598170,Parkinson Disease,1,reports/P06_DQ598170_Parkinson_Disease_run1.md,1.0,530,1726,2256,39.40599250793457,0.05443,1,1,1,1,1,1
+P06,DQ598170,Parkinson Disease,2,reports/P06_DQ598170_Parkinson_Disease_run2.md,1.0,530,1855,2385,41.23257350921631,0.0583,1,1,1,1,1,1
+P06,DQ598170,Parkinson Disease,3,reports/P06_DQ598170_Parkinson_Disease_run3.md,1.0,530,2287,2817,53.796600103378296,0.07126,1,1,1,1,1,1
+P07,DQ570738,Parkinson Disease,1,reports/P07_DQ570738_Parkinson_Disease_run1.md,1.0,530,2029,2559,45.253390312194824,0.06352,1,1,1,1,1,1
+P07,DQ570738,Parkinson Disease,2,reports/P07_DQ570738_Parkinson_Disease_run2.md,1.0,530,1864,2394,40.212013959884644,0.05857,1,1,1,1,1,1
+P07,DQ570738,Parkinson Disease,3,reports/P07_DQ570738_Parkinson_Disease_run3.md,1.0,530,1833,2363,40.65971064567566,0.05764,1,1,1,1,1,1
+P08,DQ597061,Parkinson Disease,1,reports/P08_DQ597061_Parkinson_Disease_run1.md,1.0,530,1988,2518,46.90766739845276,0.06229,1,1,1,1,1,1
+P08,DQ597061,Parkinson Disease,2,reports/P08_DQ597061_Parkinson_Disease_run2.md,1.0,530,1943,2473,44.581045627593994,0.06094,1,1,1,1,1,1
+P08,DQ597061,Parkinson Disease,3,reports/P08_DQ597061_Parkinson_Disease_run3.md,1.0,530,1980,2510,44.51572132110596,0.06205,1,1,1,1,1,1
+P09,DQ593354,Parkinson Disease,1,reports/P09_DQ593354_Parkinson_Disease_run1.md,1.0,530,1792,2322,38.97887849807739,0.05641,1,1,1,1,1,1
+P09,DQ593354,Parkinson Disease,2,reports/P09_DQ593354_Parkinson_Disease_run2.md,1.0,530,1806,2336,39.01113748550415,0.05683,1,1,1,1,1,1
+P09,DQ593354,Parkinson Disease,3,reports/P09_DQ593354_Parkinson_Disease_run3.md,1.0,530,2002,2532,42.42837834358215,0.06271,1,1,1,1,1,1
+P10,DQ599870,Parkinson Disease,1,reports/P10_DQ599870_Parkinson_Disease_run1.md,1.0,530,1741,2271,41.19158935546875,0.05488,1,1,1,1,1,1
+P10,DQ599870,Parkinson Disease,2,reports/P10_DQ599870_Parkinson_Disease_run2.md,1.0,530,1955,2485,48.92868447303772,0.0613,1,1,1,1,1,1
+P10,DQ599870,Parkinson Disease,3,reports/P10_DQ599870_Parkinson_Disease_run3.md,1.0,530,1854,2384,42.840519189834595,0.05827,1,1,1,1,1,1
+P11,PIR58596,Cardiovascular Disease,1,reports/P11_PIR58596_Cardiovascular_Disease_run1.md,1.0,530,1875,2405,43.02405047416687,0.0589,1,1,1,1,1,1
+P11,PIR58596,Cardiovascular Disease,2,reports/P11_PIR58596_Cardiovascular_Disease_run2.md,1.0,530,1917,2447,48.359737396240234,0.06016,1,1,1,1,1,1
+P11,PIR58596,Cardiovascular Disease,3,reports/P11_PIR58596_Cardiovascular_Disease_run3.md,1.0,530,1857,2387,45.16560888290405,0.05836,1,1,1,1,1,1
+P12,PIR54042,Cardiovascular Disease,1,reports/P12_PIR54042_Cardiovascular_Disease_run1.md,1.0,529,2048,2577,48.780935525894165,0.064085,1,1,1,1,1,1
+P12,PIR54042,Cardiovascular Disease,2,reports/P12_PIR54042_Cardiovascular_Disease_run2.md,1.0,529,1840,2369,43.489710092544556,0.057845,1,1,1,1,1,1
+P12,PIR54042,Cardiovascular Disease,3,reports/P12_PIR54042_Cardiovascular_Disease_run3.md,1.0,529,1807,2336,41.783143758773804,0.056855,1,1,1,1,1,1
+P13,PIR57581,Cardiovascular Disease,1,reports/P13_PIR57581_Cardiovascular_Disease_run1.md,1.0,530,1682,2212,35.40658783912659,0.05311,1,1,1,1,1,1
+P13,PIR57581,Cardiovascular Disease,2,reports/P13_PIR57581_Cardiovascular_Disease_run2.md,1.0,530,1739,2269,35.760674715042114,0.05482,1,1,1,1,1,1
+P13,PIR57581,Cardiovascular Disease,3,reports/P13_PIR57581_Cardiovascular_Disease_run3.md,1.0,530,1657,2187,34.99853181838989,0.05236,1,1,1,1,1,1
+P14,PIR54043,Cardiovascular Disease,1,reports/P14_PIR54043_Cardiovascular_Disease_run1.md,1.0,530,1879,2409,42.92316818237305,0.05902,1,1,1,1,1,1
+P14,PIR54043,Cardiovascular Disease,2,reports/P14_PIR54043_Cardiovascular_Disease_run2.md,1.0,530,1792,2322,42.57860040664673,0.05641,1,1,1,1,1,1
+P14,PIR54043,Cardiovascular Disease,3,reports/P14_PIR54043_Cardiovascular_Disease_run3.md,1.0,530,1926,2456,42.31921124458313,0.06043,1,1,1,1,1,1
+P15,DQ595881,Cardiovascular Disease,1,reports/P15_DQ595881_Cardiovascular_Disease_run1.md,1.0,531,1978,2509,47.87636995315552,0.061995,1,1,1,1,1,1
+P15,DQ595881,Cardiovascular Disease,2,reports/P15_DQ595881_Cardiovascular_Disease_run2.md,1.0,531,1816,2347,44.79703187942505,0.057135,1,1,1,1,1,1
+P15,DQ595881,Cardiovascular Disease,3,reports/P15_DQ595881_Cardiovascular_Disease_run3.md,1.0,531,1682,2213,36.99466633796692,0.053115,1,1,1,1,1,1
+P16,DQ598677,Glioblastoma,1,reports/P16_DQ598677_Glioblastoma_run1.md,1.0,550,1904,2454,40.898518800735474,0.05987,1,1,1,1,1,1
+P16,DQ598677,Glioblastoma,2,reports/P16_DQ598677_Glioblastoma_run2.md,1.0,550,1944,2494,38.30634522438049,0.06107,1,1,1,1,1,1
+P16,DQ598677,Glioblastoma,3,reports/P16_DQ598677_Glioblastoma_run3.md,1.0,550,1855,2405,37.711164474487305,0.0584,1,1,1,1,1,1
+P17,DQ598677,Parkinson Disease,1,reports/P17_DQ598677_Parkinson_Disease_run1.md,1.0,549,2137,2686,52.877496004104614,0.066855,1,1,1,1,1,1
+P17,DQ598677,Parkinson Disease,2,reports/P17_DQ598677_Parkinson_Disease_run2.md,1.0,549,2405,2954,58.74744367599487,0.074895,1,1,1,1,1,1
+P17,DQ598677,Parkinson Disease,3,reports/P17_DQ598677_Parkinson_Disease_run3.md,1.0,549,2225,2774,48.207236766815186,0.069495,1,1,1,1,1,1
+P18,DQ598677,Alzheimer Disease,1,reports/P18_DQ598677_Alzheimer_Disease_run1.md,1.0,549,2071,2620,51.17735242843628,0.064875,1,1,1,1,1,1
+P18,DQ598677,Alzheimer Disease,2,reports/P18_DQ598677_Alzheimer_Disease_run2.md,1.0,549,1731,2280,39.011255741119385,0.054675,1,1,1,1,1,1
+P18,DQ598677,Alzheimer Disease,3,reports/P18_DQ598677_Alzheimer_Disease_run3.md,1.0,549,1978,2527,46.81570100784302,0.062085,1,1,1,1,1,1
+P19,DQ598677,Cardiovascular Disease,1,reports/P19_DQ598677_Cardiovascular_Disease_run1.md,1.0,550,1706,2256,40.74688792228699,0.05393,1,1,1,1,1,1
+P19,DQ598677,Cardiovascular Disease,2,reports/P19_DQ598677_Cardiovascular_Disease_run2.md,1.0,550,2043,2593,48.32311987876892,0.06404,1,1,1,1,1,1
+P19,DQ598677,Cardiovascular Disease,3,reports/P19_DQ598677_Cardiovascular_Disease_run3.md,1.0,550,1809,2359,41.549893617630005,0.05702,1,1,1,1,1,1
+P20,DQ598677,Breast Cancer,1,reports/P20_DQ598677_Breast_Cancer_run1.md,1.0,549,1994,2543,41.16417479515076,0.062565,1,1,1,1,1,1
+P20,DQ598677,Breast Cancer,2,reports/P20_DQ598677_Breast_Cancer_run2.md,1.0,549,1841,2390,38.267911195755005,0.057975,1,1,1,1,1,1
+P20,DQ598677,Breast Cancer,3,reports/P20_DQ598677_Breast_Cancer_run3.md,1.0,549,1795,2344,36.43356728553772,0.056595,1,1,1,1,1,1
