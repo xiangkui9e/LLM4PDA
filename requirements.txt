@@ -1,0 +1,48 @@
+# LLM4PDA Python dependencies
+# Recommended Python version: 3.10
+#
+# Notes for reviewers:
+# 1) The reported predictive experiments can be reproduced from cached embeddings,
+#    so OpenAI/RNA-FM calls are not required unless regenerating descriptions or embeddings.
+# 2) Install a PyTorch build matching your CUDA version before running GPU experiments.
+#    Example for CUDA 11.8:
+#    pip install torch --index-url https://download.pytorch.org/whl/cu118
+# 3) Mamba/RNA-FM packages are required only for the MambaCAttnGCN+ baseline or
+#    regeneration of RNA-FM embeddings. They can be skipped when using cached embeddings.
+
+# Core numerical and data-processing stack
+numpy>=1.26,<2.0
+pandas>=2.2,<2.3
+scipy>=1.11,<1.14
+scikit-learn>=1.4,<1.6
+matplotlib>=3.8,<3.10
+openpyxl>=3.1,<3.2
+
+# Deep-learning stack
+torch>=2.1,<2.4
+torch-geometric>=2.5,<2.6
+
+# Graph, ontology, and sequence-similarity utilities
+networkx>=3.2,<3.4
+obonet>=1.1,<1.2
+minineedle>=3.1,<3.2
+
+# LLM/API and prompt/reporting utilities
+openai>=1.82,<2.0
+tqdm>=4.66,<5.0
+python-docx>=1.1,<1.3
+
+# Optional dependencies for specific reproduction steps
+# ----------------------------------------------------
+# Required for the MambaCAttnGCN+ baseline. Installation may require Linux,
+# CUDA-compatible PyTorch, and a working C++/CUDA build environment.
+mamba-ssm>=2.2,<3.0
+causal-conv1d>=1.4,<2.0
+
+# Required only if regenerating RNA-FM embeddings from raw RNA sequences.
+# This package provides the `fm` Python module used in feat/piRNA_embeddings.ipynb.
+git+https://github.com/ml4bio/RNA-FM.git
+
+# Optional for running the RNA-FM embedding notebook interactively.
+jupyter>=1.0,<2.0
+ipykernel>=6.29,<7.0
