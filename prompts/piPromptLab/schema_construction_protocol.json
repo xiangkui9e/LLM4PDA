@@ -1,0 +1,104 @@
+{
+  "protocol_name": "piPromptLab Human-mediated Agent Communication Protocol",
+  "protocol_version": "v1.0",
+  "created_for": "LLM4PDA",
+  "runtime_role_in_prediction": "Not used during training or inference",
+  "final_output": [
+    "frozen disease-description schema",
+    "generated disease descriptions",
+    "cached disease embeddings"
+  ],
+  "agents": [
+    {
+      "id": "A_comp",
+      "title": "Computational Biology Specialist",
+      "expertise": [
+        "computational biology",
+        "machine learning",
+        "biological networks",
+        "feature representation",
+        "reproducible evaluation"
+      ],
+      "objective": "Evaluate machine encodability, generality, and downstream representation utility."
+    },
+    {
+      "id": "A_mol",
+      "title": "Molecular Biology Specialist",
+      "expertise": [
+        "RNA biology",
+        "gene regulation",
+        "epigenetics",
+        "pathway biology",
+        "disease mechanisms"
+      ],
+      "objective": "Evaluate molecular and cellular disease relevance while avoiding unsupported mechanistic claims."
+    },
+    {
+      "id": "A_clin",
+      "title": "Clinical Medicine Specialist",
+      "expertise": [
+        "disease classification",
+        "clinical phenotypes",
+        "pathology",
+        "diagnosis",
+        "treatment",
+        "complications"
+      ],
+      "objective": "Evaluate clinical, pathological, diagnostic, and translational relevance."
+    }
+  ],
+  "supervisor": {
+    "title": "Human Researcher / Supervisor",
+    "responsibilities": [
+      "route information",
+      "remove unsupported or redundant content",
+      "merge complementary suggestions",
+      "resolve conflicts",
+      "enforce leakage control",
+      "determine convergence"
+    ]
+  },
+  "retention_criteria": [
+    "disease-level",
+    "evidence-supported",
+    "machine-encodable",
+    "task-general",
+    "not benchmark-specific",
+    "not piRNA-association-specific"
+  ],
+  "exclusion_criteria": [
+    "piRNA identifiers",
+    "PIWI/piRNA-specific disease evidence",
+    "known PDA labels",
+    "benchmark dataset labels",
+    "train/test split information",
+    "prediction targets",
+    "model predictions",
+    "unsupported speculation",
+    "duplicated fields"
+  ],
+  "stopping_criteria": [
+    "no new essential field",
+    "complete disease-level coverage",
+    "factual consistency",
+    "machine encodability",
+    "non-redundancy",
+    "explicit leakage-control constraints",
+    "defined output format",
+    "schema frozen before cross-validation"
+  ],
+  "final_schema_fields": [
+    "Disease classification and nature",
+    "Disease type",
+    "Key associated genes or mutations",
+    "Key proteins involved in pathogenesis",
+    "Related signaling pathways",
+    "Epigenetic mechanisms",
+    "Brief molecular or cellular pathogenesis mechanisms",
+    "Established treatment drugs and therapeutic mechanisms",
+    "Typical clinical symptoms and signs",
+    "Common comorbidities and complications",
+    "Inheritance patterns and known genetic factors",
+    "Diagnostic criteria and clinical testing methods"
+  ]
+}
