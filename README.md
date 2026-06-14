@@ -98,7 +98,7 @@ RNA-FM embedding extraction requires the RNA-FM dependencies used by the officia
 
 ## Before running the main model
 
-If cached files are distributed as compressed archives, extract them first:
+Extract them first:
 
 ```bash
 unzip feat/LLM_piRNA_emb.zip -d feat/
