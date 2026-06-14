@@ -57,8 +57,6 @@ python pdaxplain_batch_runner.py \
   --embedding_model text-embedding-3-small
 ```
 
-If your account uses a different GPT-5.5 API model identifier, replace `--model gpt-5.5`.
-
 ## Expected outputs
 
 - 60 raw reports: 20 predictions x 3 repeats in `reports/`
