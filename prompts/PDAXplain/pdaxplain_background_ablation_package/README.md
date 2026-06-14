@@ -75,8 +75,6 @@ The script writes:
 - `results_bg_ablation/background_dependence_case_setting_summary.csv`  
   Case-setting-level means across repeated runs.
 - `results_bg_ablation/background_dependence_summary_by_setting.csv`  
-  Main Supplementary Table Sx.8 values.
-- `results_bg_ablation/background_dependence_cost_latency_summary.csv`  
   Cost and latency by setting and call type.
 - `results_bg_ablation/background_dependence_cases_used.json`  
   The exact parsed input cases used in the experiment.
