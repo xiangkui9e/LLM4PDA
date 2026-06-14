@@ -19,8 +19,6 @@ Only `openai` and `python-docx` are required for the main script. The other pack
 export OPENAI_API_KEY="your_api_key"
 ```
 
-Do not place your API key in the manuscript, supplementary files, or GitHub repository.
-
 ## 3. Run the A vs B analysis on your two DOCX examples
 
 ```bash
