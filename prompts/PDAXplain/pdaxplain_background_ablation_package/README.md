@@ -1,4 +1,4 @@
-# PDAXplain Sx.8 Background-Knowledge Dependence Analysis
+# PDAXplain Background-Knowledge Dependence Analysis
 
 This package runs the small input-ablation analysis for PDAXplain:
 
