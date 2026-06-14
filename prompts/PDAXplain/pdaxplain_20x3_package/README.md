@@ -13,12 +13,6 @@ The 20 candidate predictions are selected from the submitted manuscript case-stu
 1. Fifteen disease-masking predictions from Table 4.
 2. Five top-ranked DQ598677 piRNA-masking predictions from Table 5.
 
-## Important limitation before final run
-
-Several rows do not yet contain `piRNA_sequence` or full `disease_description` because these fields were not present in the uploaded summary table. For the most rigorous final run, fill those columns from your released processed resources before running the script.
-
-The script still works if those fields are blank, but the generated reports will be less specific and should be described as "evidence-summary reports based on prediction metadata and post hoc evidence" rather than full PDAXplain reports.
-
 ## How to run
 
 Install dependencies:
