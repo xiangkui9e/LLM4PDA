@@ -11,8 +11,6 @@ This package runs the small input-ablation analysis for PDAXplain:
 pip install openai python-docx pandas numpy scikit-learn
 ```
 
-Only `openai` and `python-docx` are required for the main script. The other packages are optional if you later extend the analysis.
-
 ## 2. Set API key
 
 ```bash
