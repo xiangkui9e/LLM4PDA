@@ -45,8 +45,6 @@ The predictive experiments can be reproduced using the released processed datase
 
 ## Required processed data files
 
-For exact reproduction, the following files should be present after extracting the released data package at the repository root:
-
 ```text
 data/adj.csv
 data/doid.csv
@@ -61,7 +59,7 @@ pu_bagging/rn_ij_list.pickle
 two_step/rn_ij_list.pickle
 ```
 
-For the tRNA cross-RNA-type evaluation, the expected files include:
+For the tRNA cross-RNA-type evaluation:
 
 ```text
 tRNA-disease_LLM4PDA/data/adj.csv
