@@ -191,8 +191,6 @@ python dis_emb_generate_full_pipromptlab.py
 python dis_emb_to_pkl.py
 ```
 
-For reproducibility and double-blind review, API keys should never be committed. Use local environment variables or local ignored key files.
-
 ## Reproducing baseline experiments
 
 Baseline implementations or wrappers are provided in separate folders. Each baseline should be run from its own folder so that relative paths resolve correctly:
