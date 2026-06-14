@@ -280,31 +280,6 @@ prompts/piPromptLab/
 
 The final schema is fixed before model training, and the cached disease descriptions and embeddings allow downstream prediction experiments to be reproduced without rerunning the human-mediated schema-construction process.
 
-## Double-blind and security notes
-
-Before pushing to the anonymous review repository:
-
-1. remove all API keys, including any `*key*.txt` files;
-2. remove `__pycache__/`, `*.pyc`, local logs, and non-anonymized metadata;
-3. make sure Git commit metadata does not reveal author identities;
-4. use an anonymous repository name and anonymous account during peer review;
-5. provide large processed files through the anonymous repository release assets or another anonymized data archive if they are too large for GitHub; and
-6. keep the public repository link inactive or private until the journal permits public release.
-
-Recommended `.gitignore` entries:
-
-```gitignore
-__pycache__/
-*.pyc
-*.pyo
-.ipynb_checkpoints/
-.DS_Store
-.env
-*key*.txt
-*.log
-scores/
-```
-
 ## Citation
 
 This repository accompanies the manuscript:
