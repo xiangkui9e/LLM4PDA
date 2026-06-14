@@ -34,8 +34,6 @@ python scripts/pdaxplain_background_ablation.py \
   --output-price-per-m 22.50
 ```
 
-Update `--input-price-per-m` and `--output-price-per-m` according to the pricing page at the time of your experiment. If you only want token/latency logs without cost estimates, set both prices to `0`.
-
 ## 4. Run A/B if you have review summaries and retrieved snippets
 
 The extracted JSON file in `examples/two_pdaxplain_cases_extracted.json` contains automatically extracted fields from your two DOCX examples.
@@ -75,6 +73,3 @@ The script writes:
 - `results_bg_ablation/background_dependence_cases_used.json`  
   The exact parsed input cases used in the experiment.
 
-## 6. Recommended wording for Supplementary Methods
-
-Use the results in `Sx8_background_knowledge_dependence_table.md` as the main table. Interpret Setting B as improved only if it increases direct evidence-supported claims and mechanistic specificity and/or reduces unsupported-claim rate compared with Setting A. Do not interpret PDAXplain reports as experimental validation.
