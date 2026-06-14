@@ -1,7 +1,5 @@
 # PDAXplain 20 x 3 batch generation and audit package
 
-This package is prepared for the reviewer-requested PDAXplain inter-report consistency analysis.
-
 ## What is included
 
 - `pdaxplain_20_predictions.csv`
@@ -70,7 +68,3 @@ If your account uses a different GPT-5.5 API model identifier, replace `--model 
 - `results/claim_audit_long.csv`
 - `results/claim_evidence_support.csv`
 - `results/pdaxplain_20x3_results.xlsx`
-
-## Recommended manuscript sentence
-
-Repeated generation of PDAXplain reports for 20 high-confidence predictions showed high structural completion and semantic consistency under a fixed prompt template. Claim-level auditing further classified factual statements into directly supported, indirectly supported, hypothesis-level, and unsupported categories, providing a transparent estimate of evidence grounding and unsupported-claim risk.
