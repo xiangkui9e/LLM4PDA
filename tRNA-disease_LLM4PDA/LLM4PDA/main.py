@@ -22,13 +22,12 @@ path = "scores/"
 if not os.path.exists(path):
     os.makedirs(path)
 
-# 设置命令行参数
 def parse_args():
     parser = argparse.ArgumentParser(description="Load fold_info from a specified pickle file.")
     parser.add_argument("fold_info_path", type=str, help="Path to the fold_info.pickle file.")
     return parser.parse_args()
 args = parse_args()
-fold_info_path = args.fold_info_path  # 从命令行传入的路径
+fold_info_path = args.fold_info_path
 
 # load adj, sim
 # Load adjacent matrix(data_processing.py)
@@ -39,26 +38,26 @@ p_sim_np = pd.read_csv(r"../data/p2p_smith.csv", index_col=0).values
 # Load disease similarity based on DO DAG(gen_d2d_do.py)
 d_sim_np = pd.read_csv(r"../data/d2d_do.csv", index_col=0).values
 
-# === 插入你的 LLM 嵌入加载逻辑 ===
+# === LLM-TEXT ===
 with open("../data/LLM_disease_emb_tRNA.pkl", "rb") as f:
     disease_emb_dict = pickle.load(f)
-# 读取CSV文件
+
 df_disease = pd.read_csv("../data/doid.csv")
 disease_names = df_disease["disease"].tolist()
-# 构建嵌入矩阵
+
 disease_emb_matrix = np.array([disease_emb_dict[name] for name in disease_names])
 disease_LLM = torch.FloatTensor(disease_emb_matrix).to(device)
-# 替换或拼接
-d_feat = disease_LLM  # 方式1
+
+d_feat = disease_LLM
 #d_feat = d_sim_np
 
-# 加载 RNA-FM 序列嵌入
+# RNA-FM
 with open("../data/LLM_tRNA_emb.pkl", "rb") as f:
     piRNA_embed_dict = pickle.load(f)
-#读取CSV文件
+
 df_piRNA = pd.read_csv("../data/tRNA_name.csv")
 piRNA_names = df_piRNA["tRNA_name"].tolist()
-#构建miRNA序列嵌入矩阵
+
 piRNA_embed_matrix = np.array([piRNA_embed_dict[mid] for mid in piRNA_names])
 piRNA_embed_tensor = torch.FloatTensor(piRNA_embed_matrix).to(device)
 p_feat = piRNA_embed_tensor
@@ -214,7 +213,7 @@ for i in range(5):
 
     predictor = Predictor().to(device)
 
-    model = PUTransGCN(p_encoder_ae, d_encoder_ae, predictor).to(device)
+    model = LLM4PDA(p_encoder_ae, d_encoder_ae, predictor).to(device)
     fit(
         i,
         model,
@@ -230,5 +229,5 @@ for i in range(5):
     max_allocated_memory = torch.cuda.max_memory_allocated()
     print(f"最大已分配内存量: {max_allocated_memory / 1024 ** 2} MB")
 
-logger.save("PUTransGCN_comb_5")
+logger.save("LLM4PDA_comb_5")
 # torch.save(model, "params.pt")
