@@ -306,11 +306,10 @@ class TransformerEncoder(Encoder):
 
 class MultiScaleConvEncoder(nn.Module):
     """
-    多尺度一维卷积模块，前置MLP降维与特征处理
+    
     """
     def __init__(self, in_dim, out_dim, mid_dim=256, conv_channels=64, kernel_sizes=[3,5,7], dropout=0.1):
         super().__init__()
-        # 前置降维MLP
         self.mlp = nn.Sequential(
             nn.Linear(in_dim, mid_dim),
             nn.ReLU(),
@@ -357,8 +356,8 @@ class FlexibleEncoder(nn.Module):
                 nn.SiLU(),
                 #nn.Dropout(dropout),
                 nn.Linear(mlp_hidden, out_dim),
-                nn.LayerNorm(out_dim),      # 也可不加，看实验效果
-                # nn.Dropout(mlp_dropout)   # 若特征很大可考虑也加dropout
+                nn.LayerNorm(out_dim),      # 
+                # nn.Dropout(mlp_dropout)   # 
             )
         else: 
             self.encoder = MultiScaleConvEncoder(
@@ -382,9 +381,9 @@ class Predictor(nn.Module):
         return F.sigmoid(res)
 
 
-class PUTransGCN(nn.Module):
+class LLM4PDA(nn.Module):
     def __init__(self, p_encoder_ae, d_encoder_ae, predictor, **kwargs):
-        super(PUTransGCN, self).__init__(**kwargs)
+        super(LLM4PDA, self).__init__(**kwargs)
         self.p_encoder_ae = p_encoder_ae
         self.d_encoder_ae = d_encoder_ae
         self.predictor = predictor
