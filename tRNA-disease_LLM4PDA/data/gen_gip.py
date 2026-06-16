@@ -6,24 +6,20 @@ import pickle
 
 def seed_everything(seed: int = None):
     """
-    如果提供种子，则使用提供的种子；否则，基于当前时间或UUID生成随机种子。
     """
     import random
     import os
     import numpy as np
     import torch
-    import time  # 用于生成基于时间的种子
-    import uuid  # 用于生成唯一的种子
+    import time
+    import uuid
 
     if seed is not None:
-        # 如果传入种子，使用该种子进行初始化
         print(f"Using fixed seed: {seed}")
     else:
-        # 如果没有传入种子，则在0到2024范围内随机生成种子
-        seed = random.randint(0, 2024)  # 生成一个0到2024之间的随机整数
+        seed = random.randint(0, 2024)
         print(f"Using random seed: {seed}")
 
-    # 设置随机种子
     random.seed(seed)
     os.environ["PYTHONHASHSEED"] = str(seed)
     np.random.seed(seed)
