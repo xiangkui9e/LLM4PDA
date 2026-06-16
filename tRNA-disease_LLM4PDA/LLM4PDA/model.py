@@ -340,7 +340,7 @@ class FlexibleEncoder(nn.Module):
             self, 
             in_dim, 
             out_dim, 
-            method='mlp',         # 或'multiscale_cnn'
+            method='mlp',         #'multiscale_cnn'
             mlp_hidden=128, 
             conv_channels=64,
             conv_kernel_sizes=[3,5,7],
