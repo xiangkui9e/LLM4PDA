@@ -2,13 +2,13 @@ import os
 import pandas as pd
 import argparse
 
-# 设置命令行参数
+
 def parse_args():
     parser = argparse.ArgumentParser(description="Process some integers.")
     parser.add_argument('param', type=int, help='A parameter passed from the shell script')
     return parser.parse_args()
 args = parse_args()
-start_ = args.param  # 从命令行传入的路径
+start_ = args.param
 
 # plot_dir = [
 #     "./PDformer_two_step_spy",
@@ -17,11 +17,10 @@ start_ = args.param  # 从命令行传入的路径
 #     "./PDformer_all",
 # ]
 
-# 假设所有10个文件夹都在同一个父文件夹下，并且他们的名字是folder1, folder2, ..., folder10
-parent_folder = './'  # 修改为父文件夹的实际路径
-folders = ['folder_' + str(i) for i in range(1, 51)]  # 生成文件夹列表
+parent_folder = './'
+folders = ['folder_' + str(i) for i in range(1, 51)]
  
-# 遍历所有文件夹，并在每个文件夹下创建source文件夹
+
 for folder in folders:
     full_path = os.path.join(parent_folder, folder)
     source_folder_path = os.path.join(full_path, 'scores')
